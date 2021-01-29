@@ -20,7 +20,7 @@ systemctl start opennebula-sunstone
 systemctl enable opennebula-sunstone
 
 oneuser show
-http://ip:9869
+http://ip:9869 user:oneadmin passwd:liyang@008
 ```
 ## install host nodes
 ```

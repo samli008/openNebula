@@ -10,6 +10,7 @@ EOF
 
 yum -y install opennebula opennebula-server opennebula-sunstone opennebula-ruby opennebula-gate opennebula-flow
 
+gem install bundler -v 1.17.3
 /usr/share/one/install_gems
 
 echo "oneadmin:liyang@008" > /var/lib/one/.one/one_auth

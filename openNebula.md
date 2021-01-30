@@ -93,3 +93,9 @@ DB = [ backend = "mysql",
 
 mysql -u oneadmin -p
 ```
+## Configure Firewall
+```
+firewall-cmd --state
+firewall-cmd --add-port=9869/tcp --permanent
+firewall-cmd --reload
+```

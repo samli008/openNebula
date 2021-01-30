@@ -1,3 +1,8 @@
+## OpenNebula has two main components:
+```
+1.OpenNebula Front-end – This is the management engine that executes the OpenNebula services.
+2.OpenNebula Hypervisor Nodes – These are the hypervisors which provide the resources needed by the VMs.
+```
 ## install Front-end
 ```
 cat > /etc/yum.repos.d/opennebula.repo << EOF

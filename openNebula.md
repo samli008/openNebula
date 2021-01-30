@@ -48,6 +48,12 @@ EOF
 yum -y install opennebula-node-kvm
 systemctl start libvirtd
 systemctl enable libvirtd
+
+vi  /etc/libvirt/libvirtd.conf
+unix_sock_group = "oneadmin"
+unix_sock_rw_perms = "0777"
+
+systemctl restart libvirtd
 ```
 ## add host nodes ssh trust from Front-end
 ```

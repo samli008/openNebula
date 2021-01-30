@@ -1,4 +1,4 @@
-## setup host bridge network
+## setup host bridge network with vlan
 ```
 read -p "please input vlan interface: " int
 read -p "please input add vlan id: " vlan

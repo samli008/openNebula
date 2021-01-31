@@ -57,14 +57,19 @@ systemctl restart libvirtd
 ```
 ## add host nodes ssh trust from Front-end
 ```
-su oneadmin
+passwd oneadmin
+
+su - oneadmin
 ssh-keygen -t rsa
 cat /var/lib/one/.ssh/id_rsa.pub >> /var/lib/one/.ssh/authorized_keys
 chmod 644 /var/lib/one/.ssh/authorized_keys
 chmod 755 /var/lib/one/.ssh/
 
-scp /var/lib/one/.ssh/*  root@node1:/var/lib/one/.ssh/
-scp /var/lib/one/.ssh/*  root@node2:/var/lib/one/.ssh/
+scp /var/lib/one/.ssh/*  node1:/var/lib/one/.ssh/
+scp /var/lib/one/.ssh/*  node2:/var/lib/one/.ssh/
+
+ssh node1
+ssh node2
 ```
 ## Install and Configure MySQL database
 ```

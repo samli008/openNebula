@@ -60,10 +60,7 @@ systemctl restart libvirtd
 passwd oneadmin
 
 su - oneadmin
-ssh-keygen -t rsa
-cat /var/lib/one/.ssh/id_rsa.pub >> /var/lib/one/.ssh/authorized_keys
-chmod 644 /var/lib/one/.ssh/authorized_keys
-chmod 755 /var/lib/one/.ssh/
+ssh-keygen
 
 scp /var/lib/one/.ssh/*  node1:/var/lib/one/.ssh/
 scp /var/lib/one/.ssh/*  node2:/var/lib/one/.ssh/

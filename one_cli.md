@@ -11,6 +11,7 @@ NAME = Centos7.6
 PERSISTENT = NO
 PATH = /var/lib/one/c76.img
 TYPE = OS
+DRIVER = qcow2
 DESCRIPTION = "made in liyang"
 EOF
 

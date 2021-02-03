@@ -25,3 +25,7 @@ onevm list
 ```
 onevnet list
 ```
+## host operation
+```
+onehost list
+```

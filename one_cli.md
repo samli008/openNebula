@@ -30,3 +30,9 @@ onevnet list
 ```
 onehost list
 ```
+## logs
+```
+cd /var/log/one
+vi sched.log
+vi oned.log
+```

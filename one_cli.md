@@ -21,3 +21,7 @@ oneimage show 7
 ```
 onevm list
 ```
+## vnet operation
+```
+onevnet list
+```

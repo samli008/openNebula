@@ -4,7 +4,7 @@ ovs-vsctl add-br br100
 
 ovs-vsctl add-port br100 em2
 
-ovs-vsctl set port eth1 trunks=6,8
+ovs-vsctl set port em2 trunks=6,8
 
 ovs-vsctl clear port em2 trunks
 

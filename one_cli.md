@@ -22,6 +22,7 @@ oneimage show 7
 ## vm operation
 ```
 onevm list
+onevm disk-saveas test1 0 c78
 ```
 ## vnet operation
 ```

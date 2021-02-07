@@ -23,6 +23,7 @@ oneimage show 7
 ```
 onevm list
 onevm disk-saveas test1 0 c78
+onevm recover --delete 110
 ```
 ## vnet operation
 ```
